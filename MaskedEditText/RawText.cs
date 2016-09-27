@@ -51,7 +51,7 @@ namespace MaskedEditText
             }
             if (range.End >= 0 && range.End < _text.Length)
             {
-                lastPart = _text.Substring(range.End, _text.Length);
+                lastPart = _text.Substring(range.End);
             }
             _text = firstPart + lastPart;
         }
